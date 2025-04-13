@@ -33,7 +33,7 @@ public class Signin {
             App.getPrimaryStage().setScene(SignupScence);
         });
         registerButton.setOnAction(e ->{
-            Scene NoteScene = new Scene(new NotesInfoPart().GetView() , 300 , 400);
+            Scene NoteScene = new Scene(new NoteScreen().getView() , 300 , 400);
             App.getPrimaryStage().setScene(NoteScene);
         });
         root.getChildren().addAll(title , emailField , passwordField , registerButton , SignupButton);

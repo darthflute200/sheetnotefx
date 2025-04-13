@@ -12,9 +12,9 @@ public class NotesInfoPart {
     InputStream otfFontStream = getClass().getResourceAsStream("/fonts/Bravura.otf");
     private static final int LINE_COUNT = 5; 
     private static final int LINE_SPACING = 20; 
-    private static final int START_Y = 100; 
+    private static final int START_Y = 300; 
     private static final int LEFT_MARGIN = 50; 
-    private static final int RIGHT_MARGIN = 50;
+    private static final int RIGHT_MARGIN = 0;
     double flatSize = LINE_SPACING * 1.8;
     private Font bravuraFont;
     Canvas canvas = new Canvas(300, 400);
@@ -29,7 +29,6 @@ public class NotesInfoPart {
             
             double y = START_Y + i * LINE_SPACING;
             
-            // Çizgiyi çiz (sol kenardan sağ kenara)
             gc.strokeLine(LEFT_MARGIN, y, 300 - RIGHT_MARGIN, y);
         }
             gc.setFont(bravuraFont);

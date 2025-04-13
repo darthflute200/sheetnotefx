@@ -35,7 +35,13 @@
         <resource>
             <directory>src/main/resources</directory>
             <includes>
-                <include>fonts/Bravura.otf</include> 
+                <include>fonts/*.otf</include> 
+            </includes>
+        </resource>
+                <resource>
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>fonts/*.ttf</include> 
             </includes>
         </resource>
     </resources>

@@ -1,5 +1,8 @@
-com/example/Pages/NotesInfoPart.class
 com/example/Pages/Signin.class
 com/example/App.class
+com/example/Components/NotesLabels.class
+com/example/Components/NewMeasure.class
+com/example/Pages/NotesInfoPart.class
 com/example/ClassicTones/F.class
+com/example/Pages/NoteScreen.class
 com/example/RegistirationPage.class
