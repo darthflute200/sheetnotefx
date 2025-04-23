@@ -1,8 +1,13 @@
-com/example/Pages/Signin.class
 com/example/App.class
 com/example/Components/NotesLabels.class
+com/example/Components/NoteDurationSelector$NoteDuration.class
 com/example/Components/NewMeasure.class
-com/example/Pages/NotesInfoPart.class
 com/example/ClassicTones/F.class
 com/example/Pages/NoteScreen.class
 com/example/RegistirationPage.class
+com/example/Pages/NoteScreen$1.class
+com/example/Pages/Signin.class
+com/example/Components/Note.class
+com/example/Components/NoteDurationSelector.class
+com/example/Components/NewMeasure$1.class
+com/example/Pages/NotesInfoPart.class

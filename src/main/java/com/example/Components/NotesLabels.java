@@ -1,6 +1,5 @@
 package com.example.Components;
 
-import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
@@ -22,22 +21,21 @@ public class NotesLabels {
         Font pieceFont = loadFont("/fonts/Limelight-Regular.ttf", 50);
         Font composerFont = loadFont("/fonts/Limelight-Regular.ttf", 20);
 
-        // Eser adı label'ı
+
         Label PieceNameLabel = new Label(name);
         PieceNameLabel.setFont(pieceFont);
         PieceNameLabel.setMaxWidth(Double.MAX_VALUE);
 
         HBox HeaderName = new HBox(PieceNameLabel);
-        HeaderName.setAlignment(Pos.CENTER); // Ortala
+        HeaderName.setAlignment(Pos.CENTER); 
         HeaderName.setMaxWidth(Double.MAX_VALUE);
 
-        // Besteci adı label'ı
         Label ComposerLabel = new Label(composer);
         ComposerLabel.setFont(composerFont);
         ComposerLabel.setMaxWidth(Double.MAX_VALUE);
 
         HBox HeaderComposer = new HBox(ComposerLabel);
-        HeaderComposer.setAlignment(Pos.BASELINE_RIGHT); // Sağa hizala
+        HeaderComposer.setAlignment(Pos.BASELINE_RIGHT); 
         HeaderComposer.setMaxWidth(Double.MAX_VALUE);
         Header.setTranslateY(50); 
         HeaderComposer.setTranslateX(-50);

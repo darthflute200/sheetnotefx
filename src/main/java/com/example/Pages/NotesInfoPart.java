@@ -12,7 +12,7 @@ public class NotesInfoPart {
     InputStream otfFontStream = getClass().getResourceAsStream("/fonts/Bravura.otf");
     private static final int LINE_COUNT = 5; 
     private static final int LINE_SPACING = 20; 
-    private static final int START_Y = 300; 
+    private static final int START_Y = 100; 
     private static final int LEFT_MARGIN = 50; 
     private static final int RIGHT_MARGIN = 0;
     double flatSize = LINE_SPACING * 1.8;
@@ -24,7 +24,6 @@ public class NotesInfoPart {
         gc.setLineWidth(2); 
         bravuraFont = Font.loadFont(otfFontStream, LINE_SPACING * 3);
         
-        // 5 çizgiyi çiz
         for (int i = 0; i < LINE_COUNT; i++) {
             
             double y = START_Y + i * LINE_SPACING;
@@ -33,7 +32,11 @@ public class NotesInfoPart {
         }
             gc.setFont(bravuraFont);
             gc.setFill(javafx.scene.paint.Color.BLACK);
-            gc.fillText("\uE050", LEFT_MARGIN  , START_Y + LINE_SPACING * 2 + 15);
+            gc.fillText("\uE050", LEFT_MARGIN + 5  , START_Y + LINE_SPACING * 2 + 15);
+            double endX = LEFT_MARGIN;
+            double topY = START_Y;
+            double bottomY = START_Y + (LINE_COUNT - 1) * LINE_SPACING;
+            gc.strokeLine(endX, topY, endX, bottomY);
             F.addFlatForFMajor(gc, bravuraFont, LINE_SPACING, LEFT_MARGIN, START_Y);
         }
     public Pane GetView(){
